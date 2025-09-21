@@ -7,7 +7,7 @@ authors = ["Undeadguy0 <mvbunto@gmail.com>"]
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/Undeadguy0/rakhas_logger"
 readmy = "READMY.md"
-keywords = ["logging", "async", "tokio", "logger", "batch", "rakhas"]
+keywords = ["logging", "async", "tokio", "logger", "rakhas"]
 categories = ["asynchronous", "development-tools"]
 
 [dependencies]
