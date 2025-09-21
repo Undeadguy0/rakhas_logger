@@ -2,6 +2,13 @@
 name = "rakhas_logger"
 version = "0.1.0"
 edition = "2024"
+description = "Async logging library with batch processing and graceful shutdown"
+authors = ["Undeadguy0 <mvbunto@gmail.com>"]
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Undeadguy0/rakhas_logger"
+readmy = "READMY.md"
+keywords = ["logging", "async", "tokio", "logger", "batch", "rakhas"]
+categories = ["asynchronous", "development-tools"]
 
 [dependencies]
 chrono = "0.4.42"
@@ -9,3 +16,11 @@ chrono-tz = "0.10.4"
 colorize = "0.1.0"
 thiserror = "2.0.16"
 tokio = { version = "1.47.1", features = ["full"] }
+
+[dev-dependencies]
+tempfile = "3.3"
+tokio = { version = "1.47.1", features = ["full", "test-util"] }
+
+[features]
+default = ["full"]
+full = ["tokio/full"]
